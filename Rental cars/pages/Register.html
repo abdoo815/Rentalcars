@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Registeration FORM </title>
+    <link rel="stylesheet" type="text/css" href="../styles/register.css">
+    <script src="../scripts/regisre.js"></script>
+</head>
+<body>
+    <section class="Register">
+        <form class="content" method="POST">
+                <h2> Register </h2>
+           <table>
+                <tr>
+                    <td> <input type="text" placeholder="First Name" name="frist_name" required></td>
+                    <td> <input type="text" placeholder="Last Name" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td colspan="3"> <input type="text" placeholder="User Name" name="name" required></td>
+                </tr>
+                <tr class="trImg">
+                    <td colspan="3">
+                        <input id="password" onfocus="showHintIcon('password');" onfocusout="showHint('checkDiv', '#FAFAFA' ,'out');" onkeyup="checkPassword();" type="password" placeholder="Password" name="password" required>
+                        <div id="checkDiv">
+
+                            <h6 id="checkString" hidden>Should Contain A a [@,.,-,_]</h6>
+                            <img id="check" hidden src="../img/wrong.svg" onmouseover="showHint('checkDiv', '#ff5a6e' ,'in');" onmouseout="showHint('checkDiv', '#FAFAFA' ,'out');">
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input id="conPassword" onfocus="showHintIcon('confirm');" onfocusout="showHintCon('checkDivCon', '#FAFAFA' ,'out');" onkeyup="confirmPassword();" type="password" placeholder="Confirm Password" name="confirm-password" required>
+                        <div id="checkDivCon">
+
+                            <h6 id="checkStringCon" hidden>Password didnt match</h6>
+                            <img id="checkCon" hidden src="../img/wrong.svg" onmouseover="showHintCon('checkDivCon', '#ff5a6e' ,'in');" onmouseout="showHintCon('checkDivCon', '#FAFAFA' ,'out');">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="email" placeholder="EMail" name="mail" required></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="text" placeholder="Phone number" name="phone-num" required></td>
+                </tr>
+                <tr><td colspan="3"><input type="text" placeholder="National ID" name="id-num" required></td></tr>
+                <tr>
+                    <td>
+
+                        <select name="job_des" required>
+
+                            <option value="Manager">Tenant</option>
+                            <option value="Owner">Owner</option>
+                        </select>
+
+                    </td>
+                </tr>
+                 <tr><td colspan="3"><input type="text" placeholder="Duration of the car rental" name="date-num" required></td></tr>
+                <tr><td><p>Do you have a driver's license?</p></td></tr>
+                <td><input id="radio1" type="radio" name="type" value="Private Organization" required>
+                        <h5 >Yes,I have</h5>
+                    <input  type="radio" name="type" value="Private Organization" required>
+                        <h5 >No,I donot have</h5>
+                    </td>
+                <tr><td colspan="3"><input type="text" placeholder="Term of the vehicle license" name="date-num" required></td></tr>
+                <tr><td colspan="3"><input type="text" placeholder="Nightly price" name="num" required></td></tr>
+                <tr><td colspan="3"><input type="text" placeholder="Rental period" name="phone-num" required></td></tr>
+
+                <tr>
+                    <td colspan="2"><button name="sub"><a href="Home%20Page.html">Submit</a></button></td>
+                </tr>
+                <tr>
+                    <td><a id="login" href="login.html">already have account? sign In now</a></td>
+                </tr>
+            </table>
+
+        </form>
+    </section>
+
+</body>

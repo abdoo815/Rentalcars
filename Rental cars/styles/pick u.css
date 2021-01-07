@@ -1,0 +1,56 @@
+body {
+    background: url(../img/banner.jpg) repeat;
+    background-size: cover;
+}
+section {
+    width: 600px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 90px;
+    padding: auto;
+    color: #000;
+}
+
+.selectcar{
+    padding: 10px;
+	background-color: #fff;
+	padding: 50px 50px;
+	color: black;
+}
+.selectcar label{
+	font-family: sans-serif;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #6C757D;
+
+}
+.selectcar .form-control{
+	padding: 20px 0px;
+	border: 1px #009688 solid;
+	color: #6C757D;	
+	text-indent: 8px;
+}
+.selectcar .input-group-text{
+	background-color: #009688;
+	opacity: .7
+}
+.selectcar i{
+	color: #F0EEEF
+}
+.selectcar .btn{
+	display: block;
+	margin: auto;
+	background-color: #009688;
+	margin-top: 30px;
+     width: 240px;
+    height: 50px;
+}
+.selectcar .btn a {
+    color: white;
+    text-decoration: none;
+}
+form table tbody tr button:hover {
+    background-color: #009688;
+}
